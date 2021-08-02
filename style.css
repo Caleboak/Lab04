@@ -11,13 +11,12 @@
   
   height: 15rem;
   width:15rem;
-  flex-basis: 40%
+  flex-basis: 40%;
+  border:"0";
   
 }
 
-body{
-  background-color:#fff;
-}
+
 
 .button {
   background-color: #333; 
