@@ -8,17 +8,30 @@
     <title>PremierLeagueStats</title>
   <link rel="stylesheet" href="style.css">
   <script src="main.js"></script>
+  <style>
+      body{
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+  </style>
 </head>
 <body>
-    <div class="navbar">
+    <div>
        
         
         <div>
             <script>welcome()</script>
-            <h2 id="welcome">Welcome </h2>
             
-            <h2>Your score is:</h2>
+            <h1> Welcome to the Arsenal Quiz</h1>
             <p id="count"> </p>
+            
+            <script>
+            let con = confirm("Take the Quiz?")
+            if (con == true) {
+                txt = "You pressed OK!";
+            } else {
+                history.back();
+            }
+            </script>
 
             <h3>What year was Arsenal formed?</h3>
             <input id="year" type="number">
@@ -34,6 +47,13 @@
             <input id="keeper" type="text">
             <input type="button" value="Submit" onClick="keeper()">
             <h3 id="keep"></h3>
+
+            <h3>Who is the Coach?</h3>
+            <input id="coach" type="text">
+            <input type="button" value="Submit" onClick="coach()">
+            <h3 id="coacher"></h3>
+
+
         </div>
     </div>
 </body>
