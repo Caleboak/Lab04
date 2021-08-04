@@ -49,7 +49,7 @@ function expensive(){
         document.getElementById("expen").innerHTML = "Invalid input!";
 
     }
-    else if(theName=='pepe'){
+    else if(theName=='pepe' || theName=='nicolas' || theName=='nicolas pepe'){
         document.getElementById("expen").innerHTML = "Correct!";
         while(exCount>0){
             count++;

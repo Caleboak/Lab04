@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PremierLeagueStats</title>
+  <link rel="stylesheet" href="..\style.css">
+  <script src="..\jsFiles\arsenal.js"></script>
+  <style>
+      body{
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+  </style>
+</head>
+<body>
+    <div>
+       <div>
+            <script>welcome()</script>
+            
+            <h1> Welcome to the Arsenal Quiz</h1>
+            <p id="count"> </p>
+            
+            <script>
+            let con = confirm("Take the Quiz?")
+            if (con == true) {
+                txt = "You pressed OK!";
+            } else {
+                history.back();
+            }
+            </script>
+
+            <h3>What year was Arsenal formed?</h3>
+            <input id="year" type="number">
+            <input type="button" value="Submit" onClick="doStuff()">
+            <h3 id="someDiv"></h3>
+
+            <h3>Who is the club's most expensive player?</h3>
+            <input id="name" type="text">
+            <input type="button" value="Submit" onClick="expensive()">
+            <h3 id="expen"></h3>
+
+            <h3>Who is the Goalkeeper?</h3>
+            <input id="keeper" type="text">
+            <input type="button" value="Submit" onClick="keeper()">
+            <h3 id="keep"></h3>
+
+            <h3>Who is the Coach?</h3>
+            <input id="coach" type="text">
+            <input type="button" value="Submit" onClick="coach()">
+            <h3 id="coacher"></h3>
+
+
+        </div>
+    </div>
+</body>
+</html>
