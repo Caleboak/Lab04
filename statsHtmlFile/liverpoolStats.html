@@ -51,6 +51,23 @@
             <input type="button" value="Submit" onClick="coach()">
             <h3 id="coacher"></h3>
 
+            <h4>How many Liverpool images do you want to see?</h4>
+            <input id="image" type="number">
+            <input type="button" value="submit" onClick="imageClick()">
+            <script>
+                function imageClick(){
+                    var imageElement = document.getElementById("image");
+                    var theImage = imageElement.value;
+                    let counter=1;
+                    for(let i=0; i<theImage; i++){
+                        document.write(`<img class="ars" src="../images/liverpool.png">` + counter);
+                        counter++;
+                    
+            
+                    }
+                }
+            </script>
+
 
         </div>
     </div>
