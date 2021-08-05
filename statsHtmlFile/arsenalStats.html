@@ -10,7 +10,16 @@
   <script src="..\jsFiles\arsenal.js"></script>
   <style>
       body{
-          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          padding-top: 10px;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          
+      }
+      h3{
+          padding-bottom: 20px;
+      }
+      h2{
+        padding-bottom: 10px;
+
       }
   </style>
 </head>
@@ -19,7 +28,8 @@
        <div>
             <script>welcome()</script>
             
-            <h1> Welcome to the Arsenal Quiz</h1>
+            
+            <h2> Welcome to the Arsenal Quiz</h2>
             <p id="count"> </p>
             
             <script>
@@ -51,9 +61,9 @@
             <input type="button" value="Submit" onClick="coach()">
             <h3 id="coacher"></h3>
 
-            <h4>How many Arsenal images do you want to see?</h4>
+            <h3>How many Arsenal images do you want to see?</h3>
             <input id="image" type="number">
-            <input type="button" value="submit" onClick="imageClick()">
+            <input type="button" value="Submit" onClick="imageClick()">
             <script>
                 function imageClick(){
                     var imageElement = document.getElementById("image");
